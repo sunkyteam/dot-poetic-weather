@@ -1,0 +1,36 @@
+{
+    "name": "weather-dot/poetry-generator",
+    "description": "天气古诗生成系统 - 根据实时天气生成AI古诗并推送到设备",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Weather Dot Team",
+            "email": "contact@weather-dot.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-gd": "*",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WeatherDot\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "clear-cache": "php -r \"array_map('unlink', glob('cache/poetry_*.jpg'));\""
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
