@@ -132,12 +132,26 @@ weather-dot/
 ### 字体配置
 将字体文件放置在 `font/` 目录下，系统会自动检测并使用。
 
-### 图片尺寸
-默认图片尺寸为296x152像素（设备分辨率），可在 `.env` 文件中修改：
-```env
-IMAGE_WIDTH=296
-IMAGE_HEIGHT=152
+### 调用方式
+#### 方法1：直接访问index.php手动调用
+
+#### 方法2：Shell命令
+
+##### 基本调用
+```bash
+curl "http://your-domain.com/index.php?city=山东"
 ```
+
+##### 使用wget
+```bash
+wget -qO- "http://your-domain.com/index.php?city=山东"
+```
+
+## 参数说明
+
+| 参数 | 类型 | 必填 | 说明 | 示例 |
+|------|------|------|------|------|
+| city | string | 是 | 城市名称 | 北京、上海、山东 |
 
 
 ## 🔧 技术特点
@@ -168,13 +182,7 @@ IMAGE_HEIGHT=152
    - 确认设备在线状态
    - 检查推送URL是否正确
 
-### 调试模式
 
-在 `config.php` 中启用错误报告：
-```php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-```
 
 ## 🤝 贡献
 
