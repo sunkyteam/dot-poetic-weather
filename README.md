@@ -12,6 +12,11 @@
 - 🌐 **多城市支持** - 支持任意城市名称输入，自动获取城市代码
 
 ## 🖼️ 界面预览
+![1](https://github.com/user-attachments/assets/72d1b56a-58ed-4ef1-bf8c-63578608b893)
+![2](https://github.com/user-attachments/assets/61f87496-8039-4356-8ee8-2f814839477b)
+<img width="1882" height="907" alt="image" src="https://github.com/user-attachments/assets/cc8f932c-fc00-4e1a-87d3-b8135fcf5b78" />
+<img width="1873" height="913" alt="image" src="https://github.com/user-attachments/assets/3609969f-81c3-4f87-9a99-bf5af7839754" />
+
 
 生成的图片包含：
 - 左上角：天气描述和城市名称
