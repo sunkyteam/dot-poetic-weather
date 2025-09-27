@@ -98,12 +98,28 @@ DEVICE_SERIAL=your_device_serial_here
 - 系统会自动生成古诗并推送到设备
 
 ### 2. API调用
+### 调用方式
+#### 方法1：直接访问index.php手动调用
 
-支持GET请求直接调用：
+#### 方法2：Shell命令
+
+##### 基本调用
+```bash
+curl "http://your-domain.com/index.php?city=山东"
 ```
-http://your-domain.com/index.php?city=北京
-http://your-domain.com/index.php?city=上海
+
+##### 使用wget
+```bash
+wget -qO- "http://your-domain.com/index.php?city=山东"
 ```
+
+## 参数说明
+
+| 参数 | 类型 | 必填 | 说明 | 示例 |
+|------|------|------|------|------|
+| city | string | 是 | 城市名称 | 北京、上海、山东 |
+
+
 
 ### 3. 系统配置
 
@@ -131,28 +147,6 @@ weather-dot/
 
 ### 字体配置
 将字体文件放置在 `font/` 目录下，系统会自动检测并使用。
-
-### 调用方式
-#### 方法1：直接访问index.php手动调用
-
-#### 方法2：Shell命令
-
-##### 基本调用
-```bash
-curl "http://your-domain.com/index.php?city=山东"
-```
-
-##### 使用wget
-```bash
-wget -qO- "http://your-domain.com/index.php?city=山东"
-```
-
-## 参数说明
-
-| 参数 | 类型 | 必填 | 说明 | 示例 |
-|------|------|------|------|------|
-| city | string | 是 | 城市名称 | 北京、上海、山东 |
-
 
 ## 🔧 技术特点
 
